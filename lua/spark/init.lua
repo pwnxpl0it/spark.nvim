@@ -13,7 +13,7 @@ M.config = {
 
 M.initialize = function()
     local templates = {}
-    local files = io.popen("ls ~/.config/idkmng/templates")
+    local files = io.popen("ls ~/.config/spark/templates")
     for file in files:lines() do
         if file ~= "." and file ~= ".." then
             file = string.gsub(file,".toml","") -- making it shorter
@@ -32,7 +32,7 @@ M.initialize = function()
                 actions.select_default:replace(function()
                     actions.close(prompt_bufnr)
                     local selection = action_state.get_selected_entry()
-                    vim.cmd(":vsp term://idkmng " .. selection[1])
+                    vim.cmd(":vsp term://spark" .. selection[1])
                     vim.api.nvim_feedkeys('i','n',true)
                 end)
                 return true

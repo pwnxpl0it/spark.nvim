@@ -1,3 +1,3 @@
-local idkmng = require("idkmng")
+local spark = require("spark")
 
-vim.api.nvim_create_user_command('Idkmng', idkmng.initialize, {})
+vim.api.nvim_create_user_command('Idkmng', spark.initialize, {})

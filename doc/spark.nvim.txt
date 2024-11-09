@@ -1,21 +1,21 @@
 ===========================================================================================================
-                                                                 *idkmng*
-This plugin helps you with Initializing your projects easily by using idkmng (https://www.github.com/pwnxpl0it/idkmng)
-it just needs idkmng installed on your machine.
+                                                                 *spark*
+This plugin helps you with Initializing your projects easily by using spark (https://www.github.com/pwnxpl0it/spark)
+it just needs spark installed on your machine.
 
-                                                              *idkmng.setup()*
+                                                              *spark.setup()*
 
 configuration is quite simple and easy, it only takes one argument which is telescope theme,
 Example: 
 
-require("idkmng").setup({
+require("spark").setup({
     --telescope theme
     theme = require("telescope.themes").get_dropdown {} -- https://github.com/nvim-telescope/telescope.nvim#themes 
 })
 
 you can leave `theme` empty to use telescope's defualt theme
 
-require("idkmng").setup({
+require("spark").setup({
     theme = {}
 })
 
