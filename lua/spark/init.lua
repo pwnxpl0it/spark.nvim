@@ -32,7 +32,7 @@ M.initialize = function()
                 actions.select_default:replace(function()
                     actions.close(prompt_bufnr)
                     local selection = action_state.get_selected_entry()
-                    vim.cmd(":vsp term://spark" .. selection[1])
+                    vim.cmd(":vsp term://spark " .. selection[1])
                     vim.api.nvim_feedkeys('i','n',true)
                 end)
                 return true
